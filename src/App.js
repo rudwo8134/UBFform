@@ -542,7 +542,7 @@ function App() {
 
             <div className="selectbox">
               <label htmlFor="whichday">
-                3. Which day prefet to have bible study?
+                3. Which day do you prefer to study bible?
               </label>
               <select
                 name="whichday"
