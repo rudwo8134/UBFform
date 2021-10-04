@@ -76,12 +76,11 @@ const Formcontainer = styled.div`
       margin-right: 2rem;
       @media screen and (max-width: 480px) {
         margin-right: 1rem;
-        width: 80px;
+        width: 70px;
         height: 40px;
       }
       @media screen and (max-width: 380px) {
-        font-size: 1rem;
-        width: 60px;
+        width: 50px;
         height: 30px;
       }
     }
@@ -91,7 +90,7 @@ const Formcontainer = styled.div`
     text-transform: capitalize;
     font-weight: 800;
     @media screen and (max-width: 480px) {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
     @media screen and (max-width: 380px) {
       font-size: 1rem;
@@ -153,6 +152,7 @@ const Formcomponent = styled.form`
         }
         @media screen and (max-width: 380px) {
           font-size: 12px;
+          
         }
         @media screen and (max-width: 320px) {
           font-size: 10px;
@@ -307,7 +307,7 @@ const Formcomponent = styled.form`
     @media screen and (max-width: 320px) {
       padding: 0.2rem 2rem;
       font-size: 0.8rem;
-      margin: 1rem auto
+      margin: 1rem auto;
     }
     :hover {
       border: 1px solid black;
