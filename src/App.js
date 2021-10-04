@@ -360,6 +360,8 @@ function App() {
   const [loading,setloading] = useState(false)
   const [success, setsuccess] = useState(false)
   const [error,seterror] = useState(undefined)
+
+ 
   const queryid =uuid()
   const Handlechange = (event) =>{
     const {name, value} =event.target
@@ -394,7 +396,11 @@ function App() {
 
         {success ? (
           <Endingmessage>
-            {error ? <h4>{error}. please try later</h4> : <h3> Successfully submitted</h3>}
+            {error ? (
+              <h4>{error}. please try later</h4>
+            ) : (
+              <h3> Successfully submitted</h3>
+            )}
             <br />
             <h1> Thank you for participate.</h1>
             <br />
@@ -441,6 +447,7 @@ function App() {
               onChange={Handlechange}
               value={credential.email}
               placeholder="Enter your Email Address"
+              required
             />
             <label htmlFor="phonenumber">
               <AiFillPhone />
@@ -454,6 +461,7 @@ function App() {
               onChange={Handlechange}
               id="phonenumber"
               placeholder="ex) 6475308134"
+              required
             />
             <div className="optionbox">
               <div className="lablecontainerselect">
@@ -467,7 +475,9 @@ function App() {
                   id="Year"
                   value={credential.Year}
                   onChange={Handlechange}
+                  required
                 >
+                  <option>Select</option>
                   <option value="1">First Year</option>
                   <option value="2">Second Year</option>
                   <option value="3">Third Year</option>
@@ -485,7 +495,10 @@ function App() {
                   id="gender"
                   value={credential.gender}
                   onChange={Handlechange}
+                  defaultValue="Male"
+                  required
                 >
+                  <option>Select</option>
                   <option value="Male">Male</option>
                   <option value="Female">Female</option>
                   <option value="NA">No answer</option>
@@ -500,7 +513,10 @@ function App() {
                 id="haveyouread"
                 value={credential.haveyouread}
                 onChange={Handlechange}
+                defaultValue="yes"
+                required
               >
+                <option>Select</option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
               </select>
@@ -515,7 +531,10 @@ function App() {
                 id="biblestudy"
                 value={credential.biblestudy}
                 onChange={Handlechange}
+                defaultValue="yes"
+                required
               >
+                <option>Select</option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
               </select>
@@ -530,7 +549,9 @@ function App() {
                 id="whichday"
                 value={credential.whichday}
                 onChange={Handlechange}
+                defaultValue="Tues"
               >
+                <option>Select</option>
                 <option value="Tues">Tues, 11am</option>
                 <option value="Thurs">Thurs, 11am</option>
               </select>
