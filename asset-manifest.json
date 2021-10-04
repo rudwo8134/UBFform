@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/UBFform/static/css/main.c232d1fa.chunk.css",
-    "main.js": "/UBFform/static/js/main.6c325fb2.chunk.js",
-    "main.js.map": "/UBFform/static/js/main.6c325fb2.chunk.js.map",
+    "main.js": "/UBFform/static/js/main.00e019e4.chunk.js",
+    "main.js.map": "/UBFform/static/js/main.00e019e4.chunk.js.map",
     "runtime-main.js": "/UBFform/static/js/runtime-main.4c3f5b5e.js",
     "runtime-main.js.map": "/UBFform/static/js/runtime-main.4c3f5b5e.js.map",
     "static/js/2.ad09d841.chunk.js": "/UBFform/static/js/2.ad09d841.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.4c3f5b5e.js",
     "static/js/2.ad09d841.chunk.js",
     "static/css/main.c232d1fa.chunk.css",
-    "static/js/main.6c325fb2.chunk.js"
+    "static/js/main.00e019e4.chunk.js"
   ]
 }
