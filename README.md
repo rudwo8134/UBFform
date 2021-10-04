@@ -4,4 +4,4 @@ Contact: 647-530-8134
 
 ### Info
 
-this form is for be able to use by only UBF Church
+this form is be able to use by only UBF Church.

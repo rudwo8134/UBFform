@@ -356,6 +356,7 @@ function App() {
     haveyouread: '',
     biblestudy: '',
     whichday: '',
+    program:"",
   });
   const [loading,setloading] = useState(false)
   const [success, setsuccess] = useState(false)
@@ -402,7 +403,7 @@ function App() {
               <h3> Successfully submitted</h3>
             )}
             <br />
-            <h1> Thank you for participate.</h1>
+            <h1> Thank you for participation.</h1>
             <br />
             You can close the website
           </Endingmessage>
@@ -449,20 +450,38 @@ function App() {
               placeholder="Enter your Email Address"
               required
             />
-            <label htmlFor="phonenumber">
-              <AiFillPhone />
-              Phone number
-            </label>
-            <input
-              value={credential.phonenumber}
-              className="numberbox"
-              name="phonenumber"
-              type="number"
-              onChange={Handlechange}
-              id="phonenumber"
-              placeholder="ex) 6475308134"
-              required
-            />
+
+            <div className="inputbox">
+              <div className="diveder">
+                <label htmlFor="phonenumber">
+                  <AiFillPhone />
+                  Phone number
+                </label>
+                <input
+                  value={credential.phonenumber}
+                  className="numberbox"
+                  name="phonenumber"
+                  type="number"
+                  onChange={Handlechange}
+                  id="phonenumber"
+                  placeholder="ex) 6475308134"
+                  required
+                />
+              </div>
+              <div className="diveder">
+                <label htmlFor="program">Program</label>
+                <input
+                  name="program"
+                  type="text"
+                  id="program"
+                  placeholder="Enter your Program"
+                  onChange={Handlechange}
+                  value={credential.program}
+                  required
+                />
+              </div>
+            </div>
+
             <div className="optionbox">
               <div className="lablecontainerselect">
                 <label htmlFor="Year">
@@ -554,6 +573,7 @@ function App() {
                 <option>Select</option>
                 <option value="Tues">Tues, 11am</option>
                 <option value="Thurs">Thurs, 11am</option>
+                <option value="others">Others</option>
               </select>
             </div>
             {loading ? (
