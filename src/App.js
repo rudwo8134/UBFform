@@ -418,7 +418,7 @@ function App() {
                   name="firstname"
                   type="text"
                   id="firstname"
-                  placeholder="Enter your Fist name"
+                  placeholder="Enter your First name"
                   onChange={Handlechange}
                   value={credential.firstname}
                   required
